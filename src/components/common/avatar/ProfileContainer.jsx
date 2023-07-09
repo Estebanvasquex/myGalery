@@ -1,6 +1,6 @@
 import React from "react";
 import photo from "../../../assets/profilePhoto.png";
-import Profile from "./profile";
+import Profile from "./Profile";
 
 const ProfileContainer = () => {
   
