@@ -1,0 +1,87 @@
+.galeryGrid {
+  width: 90%;
+  max-width: 1000px;
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "area1 area2 area2"
+    "area3 area3 area4"
+    "area5 area6 area4"
+    "area7 area7 area7";
+  gap: 10px;
+  padding: 10px;
+  margin:auto ;
+  margin-top: 20px;
+}
+
+
+
+.box {
+  
+  border: 2px solid rgb(193, 245, 185);
+  border-radius: 10px;
+  box-shadow: 7px 11px 20px -10px rgba(0,0,0,0.59);
+}
+
+.box img {
+  
+ 
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.boxArea1 {
+  grid-area: area1;
+}
+
+.boxArea2 {
+  grid-area: area2;
+}
+
+.boxArea3 {
+  grid-area: area3;
+}
+
+.boxArea4 {
+  grid-area: area4;
+}
+
+.boxArea5 {
+  grid-area: area5;
+}
+
+.boxArea6 {
+  grid-area: area6;
+}
+
+.boxArea7{
+  grid-area: area7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #B9BDCF;
+}
+
+@media (min-width: 900px)
+{
+    .galeryGrid
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "area1 area2 area2"
+        "area3 area3 area4"
+        "area5 area6 area4"
+        "area7 area7 area7";
+        gap: 15px;
+        width: 60%;
+        margin: auto;
+
+    }
+
+
+}
